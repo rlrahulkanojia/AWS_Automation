@@ -87,7 +87,7 @@ try:
         ## CNN 
         arr = new_df.iloc[FRAME_COUNT, 3]
         if len(arr)>3:
-            temp = re.findall(r'\d+', arr)
+            temp = re.findall(r'\d+\.\d+', arr)
             temp = [t for t in temp if len(t)<=4]
             temp = list(map(int, temp))
             for ind in range(len(temp)//4):
