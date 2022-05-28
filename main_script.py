@@ -173,7 +173,9 @@ try:
         im_v = cv2.vconcat([image, img])
         #cv2.imwrite("COMBI.png", im_v)
         analysis_feed.write(im_v)
+        plt.close(fig)
         del plot,fig,img,im_v
+        
 
 except Exception as e:
     os.remove('output.png')
