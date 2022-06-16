@@ -266,7 +266,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--name")
-    parser.add_argument("--mode", default=1)
+    parser.add_argument("--mode", default="1")
 
     value  = parser.parse_args()
     mode   = value.mode
